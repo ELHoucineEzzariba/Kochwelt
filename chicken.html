@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img//favicon-32x32.png">
+
+    <link rel="stylesheet" href="./css/templates.css">
+    <link rel="stylesheet" href="./css/recipe.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Hähnchen in Erdnusssauce</title>
+
+    <script src="./script/includeHTML.js"></script>
+</head>
+
+<body onload="includeHTML(); saveOrigin();">
+
+    <div w3-include-html="templates/header.html"></div>
+    <section id="recipe">
+        <div class="content column">
+            <h1>Hähnchen in pikanter Erdnusssauce</h1>
+            <img class="recipe-img" src="./img/chinese-food.jpg" alt="">
+
+            <div class="recipe-short-info border-bottom">
+                <div class="recipe-short-info-tag">
+                    <img class="info-tag-icon" src="./img/clock-regular.svg" alt="">
+                    15 Min.
+                </div>
+                <div class="recipe-short-info-tag">
+                    <img class="info-tag-icon" src="./img/brain-solid.svg" alt="">
+                    Einfach
+                </div>
+                <div class="recipe-short-info-tag">
+                    <img class="info-tag-icon" src="./img/calendar-alt-regular.svg" alt="">
+                    29.02.2024
+                </div>
+            </div>
+
+            <div class="input-area">
+                <label for="amount">Zutaten für:</label>
+                <div class="input-fields">
+                    <input type="number" id="amount" name="fname" min="1" max="6" value="1">
+                    <div class="button" onclick="calculate()">Portionen</div>
+                </div>
+
+            </div>
+
+            <div class="ingredients">
+                <table id="table">
+                    <tr>
+                        <td> <span class="ingredients-amount">100</span> g Hähnchenbrustfilets, ohne Haut und Knochen
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <span class="ingredients-amount">1</span> TL Erdnussöl</td>
+                    </tr>
+                    <tr>
+                        <td> <span class="ingredients-amount">25</span> g Erdnüsse (geschält)</td>
+                    </tr>
+                    <tr>
+                        <td> <span class="ingredients-amount">1</span> kleine rote Chilischote(n), in Scheiben
+                            geschnitten</td>
+                    </tr>
+                    <tr>
+                        <td> <span class="ingredients-amount">1</span> kleine grüne Paprikaschote(n), entkernt und in
+                            Scheiben geschnitten</td>
+                    </tr>
+                    <tr>
+                        <td> <span class="ingredients-amount">50</span> ml Hühnerbrühe</td>
+                    </tr>
+                    <tr>
+                        <td> <span class="ingredients-amount">1</span> TL chinesischer Reiswein</td>
+                    </tr>
+                    <tr>
+                        <td> <span class="ingredients-amount">1</span> TL Sojasauce</td>
+                    </tr>
+                    <tr>
+                        <td> <span class="ingredients-amount">1</span> zerdrückte Knobauchzehe(n)</td>
+                    </tr>
+                    <tr>
+                        <td> <span class="ingredients-amount">1</span> TL frischer, geraspelter Ingwer</td>
+                    </tr>
+                    <tr>
+                        <td> <span class="ingredients-amount">1,5</span> TL Sesamöl</td>
+                    </tr>
+                    <tr>
+                        <td> <span class="ingredients-amount">1</span> TL Reisweinessig</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="preparation">
+                <h1>Zubereitung</h1>
+                <div class="recipe-short-info">
+                    <div class="recipe-short-info-tag">
+                        <img class="info-tag-icon" src="./img/clock-regular.svg" alt="">
+                        ca. 15 Min.
+                    </div>
+                    <div class="recipe-short-info-tag">
+                        <img class="info-tag-icon" src="./img/clock-regular.svg" alt="">
+                        Gesamtzeit ca. 20 Min.
+                    </div>
+                </div>
+                <ol class="prep-description">
+                    <li>Das Erdnussöl in einem vorerhitzten Wok oder einer Bratpfanne erhitzen. Die Erdnüsse in den Wok
+                        geben und 1 Minute anbraten. Die Erdnüsse mit einem Wokwender herausnehmen und beiseite legen.
+                    </li>
+                    <li>Das Hühnerfleisch in 2,5 cm große Würfel schneiden, in den Wok geben und 1-2 Minuten anbraten.
+                        Die Chili und die Paprikaschote
+                        einrühren und 1 Minute anbraten. Alles mit einem Wokwender herausnehmen und beiseite stellen.
+                    </li>
+                    <li>Die Hälfte der Erdnüsse in einen Mixer geben und mit etwas Hühnerbrühe zu einer sämigen Masse
+                        verrühren. </li>
+                    <li>Für die Sauce die Hühnerbrühe, den Reiswein, die Sojasauce, die Knoblauchzehen, den Ingwer
+                        zusammen mit dem Reisweinessig in den Wok geben. Die Sauce erhitzen und alle anderen Zutaten in
+                        den Wok geben und gründlich verrühren.</li>
+                    <li>Als Beilage kann Reis oder gebratene Nudeln serviert werden. Guten Appetit!</li>
+                </ol>
+                <h2>Rezept erstellt von</h2>
+                <div class="avatar-section">
+                    <img class="avatar" src="img/Richard.webp" alt="">
+                    <h3>Richard</h3>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+    <div w3-include-html="templates/footer.html"></div>
+
+    <script src="./script/calculate.js"></script>
+</body>
+
+</html>

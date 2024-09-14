@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img//favicon-32x32.png">
+
+    <link rel="stylesheet" href="./css/templates.css">
+    <link rel="stylesheet" href="./css/recipe.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Zitronenkuchen</title>
+    <script src="./script/includeHTML.js"></script>
+</head>
+
+<body onload="includeHTML(); saveOrigin();">
+    <div w3-include-html="templates/header.html"></div>
+    <section id="recipe">
+        <div class="content column">
+            <h1>Zitronenkuchen </h1>
+            <img class="recipe-img" src="./img/rezepteseitebild.jpg" alt="">
+
+            <div class="recipe-short-info">
+                <div class="recipe-short-info-tag">
+                    <img class="info-tag-icon" src="./img/clock-regular.svg" alt="">
+                    25 Min.
+                </div>
+                <div class="recipe-short-info-tag">
+                    <img class="info-tag-icon" src="./img/brain-solid.svg" alt="">
+                    Einfach
+                </div>
+                <div class="recipe-short-info-tag">
+                    <img class="info-tag-icon" src="./img/calendar-alt-regular.svg" alt="">
+                    28.02.2024
+                </div>
+            </div>
+
+            <div class="input-area">
+                <label for="amount">Zutaten für:</label>
+                <div class="input-fields">
+                    <input type="number" id="amount" name="fname" min="1" max="6" value="1">
+                    <div class="button" onclick="calculate()">Portionen</div>
+                </div>
+
+            </div>
+
+            <div class="ingredients">
+                <table id="table">
+                    <tr>
+                        <td> <span class="ingredients-amount">350</span> g Margarine</td>
+                    </tr>
+                    <tr>
+                        <td> <span class="ingredients-amount">350</span> g Mehl</td>
+                    </tr>
+                    <tr>
+                        <td> <span class="ingredients-amount">350</span> g Zucker</td>
+                    </tr>
+                    <tr>
+                        <td> <span class="ingredients-amount">1</span> Pck. Vanillezucker</td>
+                    </tr>
+                    <tr>
+                        <td> <span class="ingredients-amount">2</span> TL, gehäult Backpulver</td>
+                    </tr>
+                    <tr>
+                        <td> <span class="ingredients-amount">6</span> Ei(er)</td>
+                    </tr>
+                    <tr>
+                        <td> <span class="ingredients-amount">3</span> Zitrone(n), unbehandelte</td>
+                    </tr>
+                    <tr>
+                        <td> <span class="ingredients-amount">300</span> g Puderzucker</td>
+                    </tr>
+                </table>
+
+            </div>
+
+
+
+
+
+
+
+
+            <div class="preparation">
+                <h1>Zubereitung</h1>
+                <div class="recipe-short-info">
+                    <div class="recipe-short-info-tag">
+                        <img class="info-tag-icon" src="./img/clock-regular.svg" alt="">
+                        ca. 15 Min.
+                    </div>
+                    <div class="recipe-short-info-tag">
+                        <img class="info-tag-icon" src="./img/clock-regular.svg" alt="">
+                        Gesamtzeit ca. 20 Min.
+                    </div>
+                </div>
+                <ol class="prep-description">
+                    <li>Den Backofen auf 175 °C - 195 °C Ober-/Unterhitze vorheizen.</li>
+
+                    <li>Zuerst die Schale von den 3 Zitronen abreiben, zwei Zitronen davon auspressen.</li>
+
+                    <li>Dann Eier und Zucker schaumig rühren. Das Mehl sieben und mit Vanillezucker, Backpulver,
+                        Zitronenschale
+                        und
+                        Margarine nach und nach dazugeben. Alles gut mixen. Den Teig auf ein mit Backpapier ausgelegtes
+                        Backblech
+                        streichen. In den vorgeheizten Backofen schieben und ca. 20 Min. auf der mittleren Schiene
+                        backen.
+                    </li>
+
+                    <li>Nun aus dem Zitronensaft und dem Puderzucker nach und nach eine Glasur mischen - bitte sehr
+                        sparsam
+                        mit
+                        dem
+                        Zitronensaft umgehen, die Glasur muss schön dickflüssig sein.</li>
+
+                    <li>Solange der Kuchen noch warm ist, mit einer Gabel überall einstechen. Somit wird er schön
+                        saftig,
+                        denn
+                        die
+                        Glasur kann so einsickern. Dann schnell die Glasur auf dem warmen Kuchen verstreichen und
+                        auskühlen
+                        lassen.</li>
+                </ol>
+                <h2>Rezept erstellt von</h2>
+                <div class="avatar-section">
+                    <img class="avatar" src="./img/profile.png" alt="">
+                    <h3>EL Houcine</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div w3-include-html="templates/footer.html"></div>
+
+    <script src="./script/calculate.js"></script>
+
+
+</body>
+
+</html>

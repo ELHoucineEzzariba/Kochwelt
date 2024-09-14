@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./img//favicon-32x32.png">
+
+  <link rel="stylesheet" href="./css/templates.css">
+  <link rel="stylesheet" href="./css/recipe.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>Zitronenspaghetti mit Kräutergarnelen</title>
+  <script src="./script/includeHTML.js"></script>
+</head>
+
+<body onload="includeHTML(); saveOrigin();">
+  <div w3-include-html="templates/header.html"></div>
+  <section id="recipe">
+    <div class="content column">
+      <h1>Zitronenspaghetti mit Kräutergarnelen</h1>
+      <img class="recipe-img" src="./img/recept1.jpg" alt="Spaghetti" />
+
+      <div class="recipe-short-info">
+        <div class="recipe-short-info-tag">
+          <img class="info-tag-icon" src="./img/clock-regular.svg" alt="" />
+          15 Min.
+        </div>
+        <div class="recipe-short-info-tag">
+          <img class="info-tag-icon" src="./img/brain-solid.svg" alt="" />
+          Einfach
+        </div>
+        <div class="recipe-short-info-tag">
+          <img class="info-tag-icon" src="./img/calendar-alt-regular.svg" alt="">
+          10.02.2024
+        </div>
+      </div>
+
+      <div class="input-area">
+        <label for="amount">Zutaten für:</label>
+        <div class="input-fields">
+          <input type="number" id="amount" name="fname" min="1" max="6" value="1">
+          <div class="button" onclick="calculate()">Portionen</div>
+        </div>
+
+      </div>
+
+      <div class="ingredients">
+        <table id="table">
+          <tr>
+            <td><span class="ingredients-amount">87,5</span> g Spaghetti</td>
+          </tr>
+          <tr>
+            <td><span class="ingredients-amount">0,5</span> EL Butter</td>
+          </tr>
+          <tr>
+            <td><span class="ingredients-amount">20</span> ml Sahne</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="ingredients-amount">0,25</span> Zitrone(n), Abrieb und Saft davon
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="ingredients-amount">0,75</span> EL Kräuter nach Wahl (z.B. Petersilie)
+            </td>
+          </tr>
+          <tr>
+            <td><span>n.B.</span> Chilipulver</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="ingredients-amount">87,5</span> g Garnele(n), TK,
+              aufgetaut
+            </td>
+          </tr>
+          <tr>
+            <td><span class="ingredients-amount">0,5</span> EL Olivenöl</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="ingredients-amount">0,25</span> Zweig/e Rosmarin
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="ingredients-amount">0,25</span> Zweig/e Thymian
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="ingredients-amount">0,5</span> Zehe/n Knoblauch
+            </td>
+          </tr>
+          <tr>
+            <td><span>etwas</span> Salz und Pfeffer</td>
+          </tr>
+        </table>
+      </div>
+      <h2>Zubereitung</h2>
+      <div class="recipe-short-info">
+        <div class="recipe-short-info-tag">
+          <img class="info-tag-icon" src="./img/clock-regular.svg" alt="" />
+          Arbeitszeit ca.20 Min.
+        </div>
+        <div class="recipe-short-info-tag">
+          <img class="info-tag-icon" src="./img/clock-regular.svg" alt="" />
+          Koch-/Backzeit ca.10 Min.
+        </div>
+        <div class="recipe-short-info-tag">
+          <img class="info-tag-icon" src="./img/clock-regular.svg" alt="" />
+          Gesamtzeit ca.30 Min.
+        </div>
+      </div>
+
+      <ol class="prep-description">
+        <li>Die Spaghetti in Salzwasser al dente kochen.</li>
+        <li>
+          Abseihen und den heißen Nudeln Butter, Sahne, Zitronensaft und
+          -schale, Kräuter und Parmesan zufügen und alles gut vermischen.
+        </li>
+        <li>Nach Belieben Chilipulver zu den Nudeln mischen.</li>
+        <li>
+          Die Garnelen in Olivenöl mit Rosmarin- und Thymianzweig sowie den
+          klein gehackten Knoblauchzehen beidseitig kurz scharf braten. Mit
+          Salz und Pfeffer würzen.
+        </li>
+        <li>
+          Die Nudeln in tiefen Tellern anrichten und die Garnelen darauf
+          setzen.
+        </li>
+      </ol>
+
+      <h2>Rezept erstellt von</h2>
+      <div class="avatar-section">
+        <img class="avatar" src="img/profile.png" alt="">
+        <h3>Chris</h3>
+      </div>
+    </div>
+  </section>
+
+  <div w3-include-html="templates/footer.html"></div>
+
+  <script src="./script/calculate.js"></script>
+</body>
+
+</html>

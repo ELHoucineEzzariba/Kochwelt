@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="image/png" sizes="32x32" href="./img//favicon-32x32.png">
+   
+     <title>Kontakt</title>
+     <link rel="stylesheet" href="./css/templates.css">
+     <link rel="stylesheet" href="./css/style.css">
+     <link rel="stylesheet" href="./css/contact.css">
+     <script src="./script/includeHTML.js"></script>
+     <script src="./script/contact_javas.js"></script>
+
+</head>
+
+<body onload="includeHTML()">
+     <div w3-include-html="./templates/header.html"></div>
+     <div class="contact-content column contact">
+
+          <h1 class="contakttitle">Kontaktieren Sie uns </h1>
+          <form class="contactform" onsubmit="sendMail(event)">
+               <label class="contactlabel firstname">
+                    Vorname:
+                    <input class="contactinput" type="text" name="firstname" placeholder="Vorname" required>
+               </label>
+               <label class="contactlabel lastname">
+                    Vorname:
+                    <input class="contactinput" type="text" name="lastname" placeholder="Nachname" required>
+               </label>
+               <label class="contactlabel email">
+                    Email Adresse:
+                    <input class="contactinput" type="email" name="email" placeholder="E-Mail" required>
+               </label>
+               <label class="contactlabel message">
+                    Nachricht:
+                    <textarea class="contactinput" name="message" required placeholder="Ihre Nachricht an uns..."></textarea>
+               </label>
+               <!-- your other form fields go here -->
+               <button class="contactbtn" type="submit">Nachricht abschicken</button>
+          </form>
+     </div>
+
+     <div w3-include-html="./templates/footer.html"></div>
+</body>
+
+</html>

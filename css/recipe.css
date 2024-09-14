@@ -1,0 +1,139 @@
+#recipe {
+    margin-top: 150px;
+    padding-top: 60px;
+    padding-bottom: 96px;
+}
+
+#recipe {
+    display: flex;
+    flex: 1;
+}
+
+.recipe-img {
+
+    height: 250px;
+    object-fit: cover;
+}
+
+.recipe-short-info {
+    display: flex;
+    margin-top: 32px;
+    padding-bottom: 48px;
+    gap: 24px;
+
+}
+
+.content {
+    height: 100%;
+    margin-inline: auto;
+    padding-inline: 10px;
+    max-width: min(1440px, 100%);
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.border-bottom {
+    border-bottom: 2px solid rgba(0, 0, 0, .1);
+}
+
+.info-tag-icon {
+    width: 12px;
+}
+
+.recipe-short-info-tag {
+    background-color: var(--clr-light-gray);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.input-area {
+    padding-block: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.input-fields{
+    display: flex;
+    justify-content: center;
+}
+
+.input-area label {
+    margin-right: 10px;
+}
+
+.input-fields input {
+    height: 43px;
+    padding: 8px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, .1);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.input-area .button {
+    min-width: 200px;
+}
+
+#table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+
+.ingredients {
+    display: block;
+}
+
+td {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--clr-light-gray);
+
+}
+
+.preparation {
+    margin-top: 32px;
+}
+
+.prep-description {
+    max-width: 70ch;
+    margin: 0;
+}
+
+.prep-description li {
+    margin-bottom: 8px;
+    padding-left: 10px;
+}
+
+.avatar-section {
+    display: flex;
+    align-items: center;
+}
+
+.avatar-section h3 {
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, .3);
+    margin-right: 24px;
+}
+
+h2 {
+    margin-top: 40px;
+}
